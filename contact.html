@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us | TravelBloom</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Montserrat', Arial, sans-serif;
+            color: #fff;
+            background: #16393e;
+        }
+        .bg-image {
+            position: fixed;
+            top: 0; left: 0;
+            width: 100vw; height: 100vh;
+            object-fit: cover;
+            z-index: -1;
+            opacity: 0.78;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 24px 48px 18px 44px;
+            background: rgba(25, 36, 39, 0.83);
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            font-size: 2rem;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+        .logo i {
+            margin-right: 10px;
+            font-size: 2.2rem;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 1.1rem;
+            transition: color 0.2s;
+        }
+        nav a:hover {
+            color: #6ee7b7;
+        }
+        .social-bar {
+            position: fixed;
+            top: 140px;
+            left: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 22px;
+            z-index: 1;
+        }
+        .social-bar a {
+            color: #fff;
+            font-size: 1.6rem;
+            transition: color 0.2s;
+        }
+        .social-bar a:hover {
+            color: #6ee7b7;
+        }
+        .main-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 90px 42px 0 110px;
+            position: relative;
+            z-index: 1;
+        }
+        .contact-title {
+            font-size: 4rem;
+            font-weight: bold;
+            margin-bottom: 16px;
+            margin-top: 18px;
+            letter-spacing: 1px;
+        }
+        .get-in-touch {
+            font-size: 1.1rem;
+            margin-bottom: 38px;
+            margin-left: 2px;
+        }
+        .contact-form-box {
+            background: rgba(20, 23, 25, 0.41);
+            border-radius: 18px;
+            padding: 34px 55px 32px 31px;
+            max-width: 890px;
+            margin-left: auto;
+            margin-right: 0;
+            margin-top: 35px;
+            box-shadow: 0 8px 32px 0 rgba(31, 30, 50, 0.12);
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+        .contact-form label {
+            font-size: 1.18rem;
+            margin-bottom: 7px;
+            color: #fff;
+            font-weight: 500;
+        }
+        .contact-form input,
+        .contact-form textarea {
+            background: rgba(255,255,255,0.15);
+            color: #fff;
+            border: 1.5px solid rgba(255,255,255,0.15);
+            border-radius: 12px;
+            padding: 14px 20px;
+            font-size: 1.1rem;
+            font-family: inherit;
+            outline: none;
+            margin-bottom: 4px;
+            transition: border 0.2s, background 0.2s;
+            width: 100%;
+        }
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            border: 1.5px solid #6ee7b7;
+            background: rgba(255,255,255,0.27);
+        }
+        .contact-form textarea {
+            min-height: 90px;
+            max-height: 170px;
+            resize: vertical;
+        }
+        .form-btn {
+            background: #099076;
+            color: #fff;
+            border: none;
+            border-radius: 15px;
+            font-size: 1.16rem;
+            font-weight: 600;
+            padding: 12px 0;
+            width: 100%;
+            cursor: pointer;
+            margin-top: 26px;
+            transition: background 0.2s;
+        }
+        .form-btn:hover {
+            background: #6ee7b7;
+            color: #222;
+        }
+        .success-msg, .error-msg {
+            margin-top: 18px;
+            background: rgba(34,220,72,0.32);
+            color: #fff;
+            font-size: 1rem;
+            border-radius: 10px;
+            padding: 8px 18px;
+            display: none;
+        }
+        .error-msg {
+            background: rgba(220,34,72,0.24);
+        }
+        @media(max-width:900px){
+            .main-content { padding: 56px 5vw 0 5vw; }
+            .contact-title { font-size: 2.5rem; }
+            .contact-form-box { padding: 32px 28px; max-width: 100%; }
+        }
+        @media(max-width:700px){
+            .main-content { padding: 22px 1vw 0 1vw; }
+            .contact-title { font-size: 1.7rem; }
+        }
+    </style>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <img src="Contact-Us.jpg" class="bg-image" alt="Contact Us Background" />
+    <header>
+        <span class="logo">
+            <i class="fa-solid fa-plane"></i>
+            TravelBloom
+        </span>
+        <nav>
+            <a href="./travel_recommendation.html">Home</a>
+            <a href="./about.html">About Us</a>
+            <a href="./contact.html">Contact Us</a>
+        </nav>
+    </header>
+    <div class="social-bar">
+        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+    </div>
+    <div class="main-content">
+        <div class="contact-title">CONTACT US</div>
+        <div class="get-in-touch">Get in touch</div>
+        <div class="contact-form-box">
+            <form class="contact-form" id="contactForm">
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div>
+                    <label for="message">Message</label>
+                    <textarea id="message" required></textarea>
+                </div>
+                <button type="submit" class="form-btn">Submit</button>
+                <div class="success-msg" id="successMsg">Thank you for your message!</div>
+                <div class="error-msg" id="errorMsg">Please fill in all fields correctly.</div>
+            </form>
+        </div>
+    </div>
+    <script>
+        // Contact form handling
+        document.getElementById('contactForm').onsubmit = function(e){
+            e.preventDefault();
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const message = document.getElementById('message').value.trim();
+            const successMsg = document.getElementById('successMsg');
+            const errorMsg = document.getElementById('errorMsg');
+            // Basic validation
+            if(name.length > 1 && /\S+@\S+\.\S+/.test(email) && message.length > 5){
+                errorMsg.style.display = 'none';
+                successMsg.style.display = 'block';
+                setTimeout(function(){
+                    successMsg.style.display = 'none';
+                    document.getElementById('contactForm').reset();
+                }, 2500);
+            }else{
+                successMsg.style.display = 'none';
+                errorMsg.style.display = 'block';
+                setTimeout(function(){
+                    errorMsg.style.display = 'none';
+                }, 2500);
+            }
+        }
+    </script>
+</body>
+</html>
