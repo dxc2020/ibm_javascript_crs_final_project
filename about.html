@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Us | TravelBloom</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Montserrat', Arial, sans-serif;
+            color: #fff;
+            background: #16393e;
+        }
+        .bg-image {
+            position: fixed;
+            top: 0; left: 0;
+            width: 100vw; height: 100vh;
+            min-height: 100vh;
+            object-fit: cover;
+            z-index: -1;
+            opacity: 0.75;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 24px 48px 18px 40px;
+            background: rgba(25, 36, 39, 0.82);
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            font-size: 2rem;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+        .logo i {
+            margin-right: 10px;
+            font-size: 2.2rem;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 1.1rem;
+            transition: color 0.2s;
+        }
+        nav a:hover {
+            color: #6ee7b7;
+        }
+        .social-bar {
+            position: fixed;
+            top: 140px;
+            left: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 22px;
+            z-index: 1;
+        }
+        .social-bar a {
+            color: #fff;
+            font-size: 1.6rem;
+            transition: color 0.2s;
+        }
+        .social-bar a:hover {
+            color: #6ee7b7;
+        }
+        .main-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 60px 40px 0 120px;
+        }
+        .about-title {
+            font-size: 4rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            margin-top: 24px;
+            letter-spacing: 1px;
+        }
+        .about-desc {
+            background: rgba(34,34,34,0.45);
+            border-radius: 18px;
+            padding: 30px 45px 26px 28px;
+            font-size: 1.2rem;
+            line-height: 1.7;
+            font-weight: 400;
+            margin-bottom: 42px;
+        }
+        .about-desc strong {
+            font-weight: bold;
+        }
+        .team-section {
+            margin-top: 36px;
+        }
+        .team-title {
+            font-size: 2.6rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .team-cards {
+            display: flex;
+            gap: 32px;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
+        .team-card {
+            background: rgba(38,50,56, 0.71);
+            border-radius: 18px;
+            padding: 30px 34px 25px 24px;
+            min-width: 230px;
+            flex: 1 1 250px;
+            max-width: 330px;
+            margin-bottom: 18px;
+            box-shadow: 0 8px 32px 0 rgba(31, 30, 50, 0.16);
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .team-card .card-icon {
+            background: #3366e7;
+            border-radius: 50%;
+            width: 38px;
+            height: 38px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 14px;
+        }
+        .team-card .card-icon i {
+            font-size: 1.4rem;
+            color: #fff;
+        }
+        .team-card .member-name {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 4px;
+        }
+        .team-card .member-desc {
+            font-size: 1rem;
+            margin-bottom: 18px;
+            line-height: 1.5;
+        }
+        .team-card .member-role {
+            background: #324db9;
+            color: #fff;
+            border: none;
+            padding: 7px 24px;
+            border-radius: 12px;
+            font-size: 1rem;
+            letter-spacing: 1px;
+            font-weight: 600;
+            align-self: flex-start;
+            margin-top: auto;
+        }
+        @media (max-width:1000px){
+            .main-content { padding: 40px 8vw 0 8vw; }
+            .about-title { font-size: 2.8rem; }
+        }
+        @media (max-width:700px){
+            .main-content { padding: 24px 2vw 0 2vw; }
+            .about-title { font-size: 2rem; }
+            .team-cards { flex-direction: column; gap: 12px; }
+        }
+    </style>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <img src="About_Us.jpg" class="bg-image" alt="About Us Background" />
+    <header>
+        <span class="logo">
+            <i class="fa-solid fa-plane"></i>
+            TravelBloom
+        </span>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact Us</a>
+        </nav>
+    </header>
+
+    <div class="social-bar">
+        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+    </div>
+
+    <div class="main-content">
+        <div class="about-title">ABOUT US</div>
+        <div class="about-desc">
+            Welcome to Our Company! We are a team of passionate individuals dedicated to providing excellent services/products to our customers. Our mission is to <strong>provide the best experience</strong> for people traveling to different destinations around the world.<br><br>
+            Our values include integrity, innovation, customer satisfaction, and teamwork. We believe in <strong>putting our customers first and working together</strong> to achieve our goals.<br>
+            Feel free to explore our website to learn more about what we offer!
+        </div>
+
+        <div class="team-section">
+            <div class="team-title">Our<br>Team</div>
+            <div class="team-cards">
+                <div class="team-card">
+                    <span class="card-icon"><i class="fa-solid fa-user"></i></span>
+                    <div class="member-name">John Doe</div>
+                    <div class="member-desc">John is responsible for...</div>
+                    <div class="member-role">CEO</div>
+                </div>
+                <div class="team-card">
+                    <span class="card-icon"><i class="fa-solid fa-user"></i></span>
+                    <div class="member-name">Celina Thomas</div>
+                    <div class="member-desc">Celina Thomas is responsible for...</div>
+                    <div class="member-role">Team Lead</div>
+                </div>
+                <div class="team-card">
+                    <span class="card-icon"><i class="fa-solid fa-user"></i></span>
+                    <div class="member-name">Mike Tysen</div>
+                    <div class="member-desc">Mike Tysen is responsible for...</div>
+                    <div class="member-role">Delivery Head</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Extend here if interactive team features are needed
+    </script>
+</body>
+</html>
