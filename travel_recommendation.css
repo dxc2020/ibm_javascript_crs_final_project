@@ -1,0 +1,44 @@
+.homepage-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 100px; /* adjust if you have a header */
+  }
+  
+  .hero-content {
+    flex: 1.25;
+    padding-left: 70px;
+    padding-top: 56px;
+    padding-right: 30px;
+    min-width: 350px;
+    z-index: 2;
+  }
+  
+  .results-section {
+    flex: 1;
+    max-width: 520px;
+    min-width: 320px;
+    padding-top: 25px;
+    padding-left: 10px;
+    padding-right: 42px;
+    z-index: 2;
+  }
+  
+  @media (max-width: 960px) {
+    .homepage-wrapper {
+      flex-direction: column;
+      align-items: stretch;
+    }
+    .results-section {
+      max-width: 100%;
+      padding: 0 12vw;
+    }
+    .hero-content {
+      padding-left: 7vw;
+      padding-right: 7vw;
+    }
+  }
+  
